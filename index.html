@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sains & Math SMP Kelas 8</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="kalkulator">
+      <div class="header">SAINS & MATH TOOL</div>
+      <input type="text" id="display" placeholder="0" disabled />
+
+      <div class="grid-container">
+        <!-- BARIS RUMUS -->
+        <button class="btn formula" onclick="calculateGradient()">
+          Gradien<br>(m)
+        </button>
+        <button class="btn formula" onclick="calculateMean()">
+          Mean<br>(rata2)
+        </button>
+        <button class="btn formula" onclick="calculateNewtonForce()">
+          Gaya<br>F = m.a
+        </button>
+        <button class="btn formula" onclick="calculatePressure()">
+          Tekanan<br>P = F/A
+        </button>
+
+        <!-- TOMBOL RESET -->
+        <button class="btn clear" onclick="clearDisplay()">RESET</button>
+
+        <!-- ANGKA & OPERATOR -->
+        <button class="btn num" onclick="appendValue('7')">7</button>
+        <button class="btn num" onclick="appendValue('8')">8</button>
+        <button class="btn num" onclick="appendValue('9')">9</button>
+        <button class="btn operator" onclick="appendValue('/')">÷</button>
+
+        <button class="btn num" onclick="appendValue('4')">4</button>
+        <button class="btn num" onclick="appendValue('5')">5</button>
+        <button class="btn num" onclick="appendValue('6')">6</button>
+        <button class="btn operator" onclick="appendValue('*')">×</button>
+
+        <button class="btn num" onclick="appendValue('1')">1</button>
+        <button class="btn num" onclick="appendValue('2')">2</button>
+        <button class="btn num" onclick="appendValue('3')">3</button>
+        <button class="btn operator" onclick="appendValue('-')">-</button>
+
+        <button class="btn num" onclick="appendValue('0')">0</button>
+        <button class="btn num" onclick="appendValue('.')">.</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+        <button class="btn operator" onclick="appendValue('+')">+</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
