@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Sains & Math SMP kelas 8</title>
+    <title>Kalkulator Sains & Math SMP Kelas 8</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="kalkulator">
@@ -12,24 +13,24 @@
       <input type="text" id="display" placeholder="0" disabled />
 
       <div class="grid-container">
-        <!-- Tombol Fungsi Sains/IPA -->
-        <button class="btn formula" onclick="calculatePythagoras()">
-          c = √a²+b²
+        <!-- BARIS RUMUS -->
+        <button class="btn formula" onclick="calculateGradient()">
+          Gradien<br>(m)
         </button>
-        <button class="btn formula" onclick="calculateDensity()">
-          ρ = m/v
+        <button class="btn formula" onclick="calculateMean()">
+          Mean<br>(rata2)
         </button>
-        <button class="btn formula" onclick="calculateEnergy()">
-          Ep = m.g.h
+        <button class="btn formula" onclick="calculateNewtonForce()">
+          Gaya<br>F = m.a
         </button>
-        <button class="btn formula" onclick="calculateCircleArea()">
-          L. Lingkaran
+        <button class="btn formula" onclick="calculatePressure()">
+          Tekanan<br>P = F/A
         </button>
 
-        <!-- Tombol Reset -->
+        <!-- TOMBOL RESET -->
         <button class="btn clear" onclick="clearDisplay()">RESET</button>
 
-        <!-- Tombol Angka & Titik (Sudah ditambah class 'num' agar hologram & gendut) -->
+        <!-- ANGKA & OPERATOR -->
         <button class="btn num" onclick="appendValue('7')">7</button>
         <button class="btn num" onclick="appendValue('8')">8</button>
         <button class="btn num" onclick="appendValue('9')">9</button>
@@ -51,7 +52,6 @@
         <button class="btn operator" onclick="appendValue('+')">+</button>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
